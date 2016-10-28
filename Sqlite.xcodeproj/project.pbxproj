@@ -8,7 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		B0209A9D1D7E6451001861A8 /* Sqlite.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B0209A9C1D7E6451001861A8 /* Sqlite.xcconfig */; };
+		C468BEB11DC3507800D4079F /* SqiteOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C468BEA81DC3507700D4079F /* SqiteOSX.framework */; };
+		C468BEB61DC3507800D4079F /* SqiteOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468BEB51DC3507800D4079F /* SqiteOSXTests.swift */; };
+		C468BEB81DC3507800D4079F /* SqiteOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = C468BEAA1DC3507800D4079F /* SqiteOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C468BEB21DC3507800D4079F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0209A861D7E63F0001861A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C468BEA71DC3507700D4079F;
+			remoteInfo = SqiteOSX;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B0209A8F1D7E63F0001861A8 /* Sqlite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sqlite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -16,6 +29,12 @@
 		B0209A9A1D7E6451001861A8 /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
 		B0209A9B1D7E6451001861A8 /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
 		B0209A9C1D7E6451001861A8 /* Sqlite.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Sqlite.xcconfig; sourceTree = "<group>"; };
+		C468BEA81DC3507700D4079F /* SqiteOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SqiteOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C468BEAA1DC3507800D4079F /* SqiteOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqiteOSX.h; sourceTree = "<group>"; };
+		C468BEAB1DC3507800D4079F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C468BEB01DC3507800D4079F /* SqiteOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqiteOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C468BEB51DC3507800D4079F /* SqiteOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqiteOSXTests.swift; sourceTree = "<group>"; };
+		C468BEB71DC3507800D4079F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C468BEA41DC3507700D4079F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C468BEAD1DC3507800D4079F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C468BEB11DC3507800D4079F /* SqiteOSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				B0209A911D7E63F0001861A8 /* Sqlite */,
+				C468BEA91DC3507800D4079F /* SqiteOSX */,
+				C468BEB41DC3507800D4079F /* SqiteOSXTests */,
 				B0209A901D7E63F0001861A8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				B0209A8F1D7E63F0001861A8 /* Sqlite.framework */,
+				C468BEA81DC3507700D4079F /* SqiteOSX.framework */,
+				C468BEB01DC3507800D4079F /* SqiteOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +94,24 @@
 			path = Sqlite;
 			sourceTree = "<group>";
 		};
+		C468BEA91DC3507800D4079F /* SqiteOSX */ = {
+			isa = PBXGroup;
+			children = (
+				C468BEAA1DC3507800D4079F /* SqiteOSX.h */,
+				C468BEAB1DC3507800D4079F /* Info.plist */,
+			);
+			path = SqiteOSX;
+			sourceTree = "<group>";
+		};
+		C468BEB41DC3507800D4079F /* SqiteOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				C468BEB51DC3507800D4079F /* SqiteOSXTests.swift */,
+				C468BEB71DC3507800D4079F /* Info.plist */,
+			);
+			path = SqiteOSXTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -63,6 +119,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C468BEA51DC3507700D4079F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C468BEB81DC3507800D4079F /* SqiteOSX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,17 +152,62 @@
 			productReference = B0209A8F1D7E63F0001861A8 /* Sqlite.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C468BEA71DC3507700D4079F /* SqiteOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C468BEBD1DC3507800D4079F /* Build configuration list for PBXNativeTarget "SqiteOSX" */;
+			buildPhases = (
+				C468BEA31DC3507700D4079F /* Sources */,
+				C468BEA41DC3507700D4079F /* Frameworks */,
+				C468BEA51DC3507700D4079F /* Headers */,
+				C468BEA61DC3507700D4079F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SqiteOSX;
+			productName = SqiteOSX;
+			productReference = C468BEA81DC3507700D4079F /* SqiteOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C468BEAF1DC3507800D4079F /* SqiteOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C468BEBE1DC3507800D4079F /* Build configuration list for PBXNativeTarget "SqiteOSXTests" */;
+			buildPhases = (
+				C468BEAC1DC3507800D4079F /* Sources */,
+				C468BEAD1DC3507800D4079F /* Frameworks */,
+				C468BEAE1DC3507800D4079F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C468BEB31DC3507800D4079F /* PBXTargetDependency */,
+			);
+			name = SqiteOSXTests;
+			productName = SqiteOSXTests;
+			productReference = C468BEB01DC3507800D4079F /* SqiteOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B0209A861D7E63F0001861A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "bimt-jlf";
 				TargetAttributes = {
 					B0209A8E1D7E63F0001861A8 = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					C468BEA71DC3507700D4079F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					C468BEAF1DC3507800D4079F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -115,6 +224,8 @@
 			projectRoot = "";
 			targets = (
 				B0209A8E1D7E63F0001861A8 /* Sqlite */,
+				C468BEA71DC3507700D4079F /* SqiteOSX */,
+				C468BEAF1DC3507800D4079F /* SqiteOSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,6 +236,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0209A9D1D7E6451001861A8 /* Sqlite.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C468BEA61DC3507700D4079F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C468BEAE1DC3507800D4079F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +279,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C468BEA31DC3507700D4079F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C468BEAC1DC3507800D4079F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C468BEB61DC3507800D4079F /* SqiteOSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C468BEB31DC3507800D4079F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C468BEA71DC3507700D4079F /* SqiteOSX */;
+			targetProxy = C468BEB21DC3507800D4079F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B0209A951D7E63F0001861A8 /* Debug */ = {
@@ -286,6 +434,96 @@
 			};
 			name = Release;
 		};
+		C468BEB91DC3507800D4079F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SqiteOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = LemonTree.SqiteOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C468BEBA1DC3507800D4079F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SqiteOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = LemonTree.SqiteOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C468BEBB1DC3507800D4079F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SqiteOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = LemonTree.SqiteOSXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C468BEBC1DC3507800D4079F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SqiteOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = LemonTree.SqiteOSXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -306,6 +544,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C468BEBD1DC3507800D4079F /* Build configuration list for PBXNativeTarget "SqiteOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C468BEB91DC3507800D4079F /* Debug */,
+				C468BEBA1DC3507800D4079F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C468BEBE1DC3507800D4079F /* Build configuration list for PBXNativeTarget "SqiteOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C468BEBB1DC3507800D4079F /* Debug */,
+				C468BEBC1DC3507800D4079F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
