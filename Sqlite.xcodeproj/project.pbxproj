@@ -8,20 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B0209A9D1D7E6451001861A8 /* Sqlite.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B0209A9C1D7E6451001861A8 /* Sqlite.xcconfig */; };
-		C468BEB11DC3507800D4079F /* SqiteOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C468BEA81DC3507700D4079F /* SqiteOSX.framework */; };
-		C468BEB61DC3507800D4079F /* SqiteOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C468BEB51DC3507800D4079F /* SqiteOSXTests.swift */; };
 		C468BEB81DC3507800D4079F /* SqiteOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = C468BEAA1DC3507800D4079F /* SqiteOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C468BEB21DC3507800D4079F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B0209A861D7E63F0001861A8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C468BEA71DC3507700D4079F;
-			remoteInfo = SqiteOSX;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B0209A8F1D7E63F0001861A8 /* Sqlite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sqlite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +20,6 @@
 		C468BEA81DC3507700D4079F /* SqiteOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SqiteOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C468BEAA1DC3507800D4079F /* SqiteOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SqiteOSX.h; sourceTree = "<group>"; };
 		C468BEAB1DC3507800D4079F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C468BEB01DC3507800D4079F /* SqiteOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SqiteOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C468BEB51DC3507800D4079F /* SqiteOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SqiteOSXTests.swift; sourceTree = "<group>"; };
 		C468BEB71DC3507800D4079F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -49,14 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C468BEAD1DC3507800D4079F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C468BEB11DC3507800D4079F /* SqiteOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +57,6 @@
 			children = (
 				B0209A8F1D7E63F0001861A8 /* Sqlite.framework */,
 				C468BEA81DC3507700D4079F /* SqiteOSX.framework */,
-				C468BEB01DC3507800D4079F /* SqiteOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,24 +148,6 @@
 			productReference = C468BEA81DC3507700D4079F /* SqiteOSX.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C468BEAF1DC3507800D4079F /* SqiteOSXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C468BEBE1DC3507800D4079F /* Build configuration list for PBXNativeTarget "SqiteOSXTests" */;
-			buildPhases = (
-				C468BEAC1DC3507800D4079F /* Sources */,
-				C468BEAD1DC3507800D4079F /* Frameworks */,
-				C468BEAE1DC3507800D4079F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C468BEB31DC3507800D4079F /* PBXTargetDependency */,
-			);
-			name = SqiteOSXTests;
-			productName = SqiteOSXTests;
-			productReference = C468BEB01DC3507800D4079F /* SqiteOSXTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,10 +162,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					C468BEA71DC3507700D4079F = {
-						CreatedOnToolsVersion = 8.0;
-						ProvisioningStyle = Automatic;
-					};
-					C468BEAF1DC3507800D4079F = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -225,7 +181,6 @@
 			targets = (
 				B0209A8E1D7E63F0001861A8 /* Sqlite */,
 				C468BEA71DC3507700D4079F /* SqiteOSX */,
-				C468BEAF1DC3507800D4079F /* SqiteOSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,13 +195,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C468BEA61DC3507700D4079F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C468BEAE1DC3507800D4079F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,23 +234,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C468BEAC1DC3507800D4079F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C468BEB61DC3507800D4079F /* SqiteOSXTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C468BEB31DC3507800D4079F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C468BEA71DC3507700D4079F /* SqiteOSX */;
-			targetProxy = C468BEB21DC3507800D4079F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B0209A951D7E63F0001861A8 /* Debug */ = {
@@ -486,44 +418,6 @@
 			};
 			name = Release;
 		};
-		C468BEBB1DC3507800D4079F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SqiteOSXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = LemonTree.SqiteOSXTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		C468BEBC1DC3507800D4079F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SqiteOSXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = LemonTree.SqiteOSXTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -552,14 +446,7 @@
 				C468BEBA1DC3507800D4079F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		C468BEBE1DC3507800D4079F /* Build configuration list for PBXNativeTarget "SqiteOSXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C468BEBB1DC3507800D4079F /* Debug */,
-				C468BEBC1DC3507800D4079F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
